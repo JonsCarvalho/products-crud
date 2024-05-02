@@ -1,5 +1,5 @@
-import 'package:crud_engenharia/core/entities/product.model.dart';
 import 'package:crud_engenharia/screens/create/features/product_create/domain/entities/product_create.request.dart';
+import 'package:crud_engenharia/shared/product.model.dart';
 
 class ProductCreateRequestDto extends ProductCreateRequest {
   ProductCreateRequestDto({

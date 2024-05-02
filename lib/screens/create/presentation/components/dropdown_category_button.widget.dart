@@ -1,4 +1,4 @@
-import 'package:crud_engenharia/core/entities/category.model.dart';
+import 'package:crud_engenharia/shared/category.model.dart';
 import 'package:flutter/material.dart';
 
 class DropdownCategoryButton extends StatelessWidget {

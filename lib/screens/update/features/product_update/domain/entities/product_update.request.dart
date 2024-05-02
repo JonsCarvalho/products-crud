@@ -1,4 +1,4 @@
-import 'package:crud_engenharia/core/entities/product.model.dart';
+import 'package:crud_engenharia/shared/product.model.dart';
 
 class ProductUpdateRequest {
   final Product product;

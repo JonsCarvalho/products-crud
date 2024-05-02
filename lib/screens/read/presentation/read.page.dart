@@ -1,11 +1,11 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:crud_engenharia/core/entities/category.model.dart';
-import 'package:crud_engenharia/core/entities/product.model.dart';
 import 'package:crud_engenharia/screens/create/presentation/create.page.dart';
 import 'package:crud_engenharia/screens/read/presentation/components/product_card.widget.dart';
 import 'package:crud_engenharia/screens/read/presentation/controllers/read.controller.dart';
 import 'package:crud_engenharia/screens/update/presentation/update.page.dart';
+import 'package:crud_engenharia/shared/category.model.dart';
 import 'package:crud_engenharia/shared/collections.dart';
+import 'package:crud_engenharia/shared/product.model.dart';
 import 'package:crud_engenharia/shared/text_app.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
@@ -131,7 +131,6 @@ class _ReadPageState extends State<ReadPage> {
                       padding: const EdgeInsets.symmetric(horizontal: 16),
                       child: GridView.builder(
                         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
-                        // physics: const NeverScrollableScrollPhysics(),
                         itemCount: list.length,
                         itemBuilder: (context, index) {
                           return ProductCard(

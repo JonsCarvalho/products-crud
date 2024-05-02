@@ -1,11 +1,12 @@
 import 'package:brasil_fields/brasil_fields.dart';
-import 'package:crud_engenharia/core/entities/category.model.dart';
-import 'package:crud_engenharia/core/entities/product.model.dart';
+
 import 'package:crud_engenharia/screens/create/presentation/components/dropdown_category_button.widget.dart';
 import 'package:crud_engenharia/screens/update/presentation/components/bottom_nav_bar.dart';
 import 'package:crud_engenharia/screens/update/presentation/components/forms.widget.dart';
 import 'package:crud_engenharia/screens/update/presentation/components/product_image.widget.dart';
 import 'package:crud_engenharia/screens/update/presentation/controllers/update.controller.dart';
+import 'package:crud_engenharia/shared/category.model.dart';
+import 'package:crud_engenharia/shared/product.model.dart';
 import 'package:crud_engenharia/shared/text_app.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
@@ -61,7 +62,10 @@ class _UpdatePageState extends State<UpdatePage> {
                 child: SingleChildScrollView(
                   child: Column(
                     children: [
-                      ProductImage(imageUrl: widget.product.imageUrl),
+                      Hero(
+                        tag: widget.product,
+                        child: ProductImage(imageUrl: widget.product.imageUrl),
+                      ),
                       Forms(
                         nameController: _controller.nameController,
                         priceController: _controller.priceController,

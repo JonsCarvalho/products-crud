@@ -1,14 +1,15 @@
 import 'package:brasil_fields/brasil_fields.dart';
-import 'package:crud_engenharia/core/entities/category.model.dart';
-import 'package:crud_engenharia/core/entities/product.model.dart';
 import 'package:crud_engenharia/screens/update/features/product_delete/domain/entities/product_delete.request.dart';
 import 'package:crud_engenharia/screens/update/features/product_delete/domain/entities/product_delete.response.dart';
 import 'package:crud_engenharia/screens/update/features/product_delete/domain/usecases/product_delete.usecase.dart';
 import 'package:crud_engenharia/screens/update/features/product_update/domain/entities/product_update.request.dart';
 import 'package:crud_engenharia/screens/update/features/product_update/domain/entities/product_update.response.dart';
 import 'package:crud_engenharia/screens/update/features/product_update/domain/usecases/product_update.usecase.dart';
+import 'package:crud_engenharia/shared/category.model.dart';
+import 'package:crud_engenharia/shared/product.model.dart';
 import 'package:flutter/material.dart';
 import 'package:mobx/mobx.dart';
+
 part 'update.controller.g.dart';
 
 class UpdateController = UpdateControllerBase with _$UpdateController;

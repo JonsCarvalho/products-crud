@@ -1,5 +1,6 @@
 import 'package:brasil_fields/brasil_fields.dart';
-import 'package:crud_engenharia/core/entities/product.model.dart';
+import 'package:crud_engenharia/screens/update/presentation/components/product_image.widget.dart';
+import 'package:crud_engenharia/shared/product.model.dart';
 import 'package:flutter/material.dart';
 
 class ProductCard extends StatelessWidget {
@@ -23,26 +24,9 @@ class ProductCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Expanded(
-              child: Container(
-                decoration: BoxDecoration(
-                  image: product.imageUrl.isNotEmpty
-                      ? DecorationImage(
-                          image: NetworkImage(product.imageUrl),
-                          alignment: Alignment.topCenter,
-                          fit: BoxFit.cover,
-                        )
-                      : null,
-                  boxShadow: const [
-                    BoxShadow(
-                      color: Colors.black26,
-                      offset: Offset(1, 1),
-                      spreadRadius: 2,
-                      blurRadius: 2,
-                    )
-                  ],
-                  borderRadius: BorderRadius.circular(15),
-                  color: Colors.red.withOpacity(.3),
-                ),
+              child: Hero(
+                tag: product,
+                child: ProductImage(imageUrl: product.imageUrl),
               ),
             ),
             const SizedBox(height: 8),

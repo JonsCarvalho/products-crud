@@ -1,10 +1,11 @@
-import 'package:crud_engenharia/core/entities/category.model.dart';
-import 'package:crud_engenharia/core/entities/product.model.dart';
 import 'package:crud_engenharia/screens/create/features/product_create/domain/entities/product_create.request.dart';
 import 'package:crud_engenharia/screens/create/features/product_create/domain/entities/product_create.response.dart';
 import 'package:crud_engenharia/screens/create/features/product_create/domain/usecases/product_create.usecase.dart';
+import 'package:crud_engenharia/shared/category.model.dart';
+import 'package:crud_engenharia/shared/product.model.dart';
 import 'package:flutter/material.dart';
 import 'package:mobx/mobx.dart';
+
 part 'create.controller.g.dart';
 
 class CreateController = CreateControllerBase with _$CreateController;

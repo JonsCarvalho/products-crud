@@ -1,5 +1,5 @@
-import 'package:crud_engenharia/core/entities/product.model.dart';
 import 'package:crud_engenharia/screens/update/features/product_update/domain/entities/product_update.request.dart';
+import 'package:crud_engenharia/shared/product.model.dart';
 
 class ProductUpdateRequestDto extends ProductUpdateRequest {
   ProductUpdateRequestDto({
